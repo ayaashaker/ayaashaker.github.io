@@ -1,0 +1,243 @@
+body {
+    color: #3D3D3D;
+    font-size: 16px;
+    font-family: "Work Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #FFFFFF;
+    box-sizing: border-box;
+  }
+  a {
+    color: #0500FF;
+  }
+  
+  h1, h2, h3 {
+    font-family: "Sora", sans-serif;
+    font-weight: 700;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 3rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  /* Header */
+  header {
+    background-color: #FFFFFF;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  header nav ul {
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  header nav li {
+    display: inline;
+    margin-inline-start: 1rem;
+    font-family: "Sora", sans-serif;
+    font-weight: 700;
+  }
+  
+  header nav li a {
+    text-decoration: none;
+    color: #3D3D3D;
+  }
+  .intro {
+    display: flex;
+    color: #FFFFFF;
+    background: #0500FF;
+    align-items: center;
+    padding-block: 4rem;
+  }
+  .intro-content{
+    max-width: 1024px;
+    margin: 0 auto;
+  
+  }
+  .title:hover{
+    background: linear-gradient(to left,#FF006E, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  @media (max-width: 1024px) {
+    .intro {
+      flex-direction: column;
+    }
+  }
+  
+  a.btn {
+    display: inline-flex;
+    align-items: center;
+    background: #FF006E;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 0.875rem;
+  }
+  
+  .featured-projects {
+    background-color: #FFFFFF;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-block-end: 3rem;
+  }
+  
+  article {
+    display: flex;
+    background-color: #FFFFFF;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 3rem 0;
+  }
+  
+  article h3 {
+    margin-block-start: 0;
+  }
+  
+  article a {
+    font-weight: 700;
+    padding: 2rem 0;
+  }
+  
+  article li {
+    margin-block-end: 0.5rem;
+  }
+  
+  article .article-img {
+    width: 512px;
+    min-width: 512px;
+    object-fit: cover;
+    border: 2px solid #D9D9D9;
+    border-radius: 0.5rem;
+    margin-inline-start: 4rem;
+  }
+  
+  @media (max-width: 1024px) {
+    article {
+      flex-direction: column;
+    }
+  
+    article .article-img {
+      width: 100%;
+      min-width: 100%;
+      margin-inline-start: 0;
+      margin-block-start: 2rem;
+    }
+  }
+  
+  footer {
+    background-color: #0500FF;
+    padding: 0 5%;
+    text-align: center;
+    padding-block: 1rem;
+  }
+  
+  footer ul {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer ul li {
+    display: inline;
+    margin: 0 8%;
+  }
+  footer a {
+    display: inline-flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: "Sora", sans-serif;
+    font-weight: 700;
+    align-items: center;
+  }
+  
+  footer .copywright {
+    color: #FFFFFF;
+    margin: 3rem 0;
+  }
+  
+  footer .link-icon {
+    margin-block-start: 0.5rem;
+    background: #FF006E;
+    color: #FFFFFF;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  /* Popup window */
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+  }
+  
+  .popup h2 {
+    font-size: 2.5rem;
+    color: #3D3D3D;
+  }
+  
+  .popup p {
+    font-size: 1.25rem;
+    color: #3D3D3D;
+    margin-bottom: 1rem;
+  }
+  
+  .popup input[type="text"], .popup input[type="email"], .popup textarea {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #D9D9D9;
+    margin-bottom: 1rem;
+  }
+  
+  .popup button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    background-color: #0500FF;
+    color: #FFFFFF;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .popup button[type="submit"]:hover {
+    background-color: #3D3D3D;
+  }
+  
